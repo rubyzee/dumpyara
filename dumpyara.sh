@@ -257,7 +257,7 @@ fi
 # Telegram channel
 TG_TOKEN=$(< "$PROJECT_DIR"/.tgtoken)
 if [[ -n "$TG_TOKEN" ]]; then
-    CHAT_ID="@aliciadump"
+    CHAT_ID="-1001767889951"
     commit_head=$(git log --format=format:%H | head -n 1)
     commit_link="https://github.com/$ORG/$repo/commit/$commit_head"
     echo -e "Sending telegram notification"

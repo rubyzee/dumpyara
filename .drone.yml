@@ -1,0 +1,19 @@
+--- 
+clone: 
+  depth: 1
+kind: pipeline
+name: Dumper
+steps: 
+  - 
+    commands: 
+      - "bash run.sh "
+    environment: 
+      BOT_TOKEN: 
+        from_secret: BOT_TOKEN
+      GIT_SECRET: 
+        from_secret: GIT_SECRET
+    image: fadlyas/kernel_dockerfile:latest
+    name: Dumper
+    trigger: 
+      branch: 
+        - unified-tes
