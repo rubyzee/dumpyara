@@ -12,6 +12,8 @@ steps:
         from_secret: BOT_TOKEN
       GIT_SECRET: 
         from_secret: GIT_SECRET
+      TG_CHAT_ID:
+        from_secret: TG_CHAT_ID
     image: fadlyas/kernel_dockerfile:latest
     name: Dumper
     trigger: 
