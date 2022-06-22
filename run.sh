@@ -10,7 +10,7 @@ CurrentFolder=$(pwd)
 
 if [ ! -z "$Link" ];then
     wget "$Link" -O "$FileName"
-    bash dumpyara.sh "$FileName" "$GIT_SECRET" "$BOT_TOKEN"
+    bash dumpyara.sh "$FileName" "$GIT_SECRET" "$TG_TOKEN"
 fi
 
 cd "$CurrentFolder" && rm -rf "$CurrentFolder/*"
